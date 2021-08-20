@@ -5,7 +5,7 @@
         <meta name="description" content="Aplicatido Transformar Temperatura"> <!-- metas sao usados para ajudar a melhorar as pesquisas no google -->
         <meta name="keywords" content="html,php">
         <meta name="robots" content="exerc2_1908.php">
-        <title>Média</title><!-- titulo da pagina-->
+        <title>Transformando Temperatura</title><!-- titulo da pagina-->
 
 
     </head>
@@ -27,7 +27,7 @@
                 if(isset($_POST["tempf"])){//fazer verificação pelo 1º name
                 $tempf = $_POST['tempf']; // variavel global do php que está recebendo o name"feito no imput" do HTML
                 $tempc = (5 * ($tempf-32) / 9);
-                echo "A temperatura em Graus Celsius é $tempc º";
+                echo "A temperatura $tempf, em Celsius é" .number_format($tempc,2)." (Cº).";
                 }
                 else{
                     echo"";
