@@ -27,17 +27,17 @@
                 if(isset($_POST["numero"])){//fazer verificação pelo 1º name
                 $numero = $_POST['numero']; // variavel global do php que está recebendo o name"feito no imput" do HTML
                 
-                if (( $numero <= 280 )){
-                $numero = ( $numero * 1.20 );
-                }
-                    elseif( $numero >= 280 && <= 700 ){
+                    if (( $numero <= 280 )){
+                    $numero = ( $numero * 1.20 );
+                    }
+                    elseif( $numero >= 280 && $numero <= 700 ){
                         $numero = ( $numero * 1.15 );
                     }
-                    elseif( $numero >= 700 && <= 1500){
+                    elseif( $numero >= 700 && $numero <= 1500){
                         $numero = ($numero * 1.10 );
                     }
-                    else ( $numero > 1500 ){
-                        $numero = ($numero * 1.05)
+                    else( $numero > 1500 ){
+                        $numero = ($numero * 1.05);
                     }
                 }
             ?></center>
